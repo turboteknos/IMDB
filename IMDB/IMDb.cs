@@ -28,7 +28,7 @@ namespace IMDB
             
         }
 
-
+        
 
         static void FajlBeolvas(string fajlnev)
         {
@@ -39,17 +39,17 @@ namespace IMDB
                 film.Add(new Filmek(f));
             }
         }
-        static void FajlBeolvas2(string fajlnev)
-        {
-            FileStream fajl=new FileStream(fajlnev,FileMode.Open);
-            StreamReader sr = new StreamReader(fajl, Encoding.UTF8 );
-            sr.ReadLine();
-            while (!sr.EndOfStream)
-            {
-                film.Add(new Filmek(sr.ReadLine()));
-            }
+        //static void FajlBeolvas2(string fajlnev)
+        //{
+        //    FileStream fajl=new FileStream(fajlnev,FileMode.Open);
+        //    StreamReader sr = new StreamReader(fajl, Encoding.UTF8 );
+        //    sr.ReadLine();
+        //    while (!sr.EndOfStream)
+        //    {
+        //        film.Add(new Filmek(sr.ReadLine()));
+        //    }
 
-        }
+        //}
 
 
         static void FeladatKiir(byte fszam, string szoveg="")

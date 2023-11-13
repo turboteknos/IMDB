@@ -8,7 +8,6 @@ namespace IMDB
 {
     internal class Filmek
     {
-        private string  _szineszek;
         public Filmek(string sor)
         {
             //helyezes;cim;mufaj;leiras;rendezo;szinesz;ev;hossz;ertekeles;szavazat
